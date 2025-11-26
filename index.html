@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Biribox</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style/index.css') }}">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h1>Biribox</h1>
+      <p class="muted">Assistente de tecnologia</p>
+      <button id="clearBtn">Limpar</button>
+    </aside>
+
+    <main class="chat">
+      <div class="top"><strong>Assistente de Tecnologia</strong></div>
+      <div class="messages" id="messages">
+        <div class="empty">Envie uma pergunta sobre tecnologia</div>
+      </div>
+
+      <div class="input-area">
+        <input id="messageInput" type="text" placeholder="Pergunte algo sobre tecnologia..." autocomplete="off" />
+        <button id="sendBtn">Enviar</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
